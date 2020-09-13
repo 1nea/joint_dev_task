@@ -1,3 +1,5 @@
+# 課題の回答は このファイル をご利用下さい。
+# 回答の出力を確認される際は，「ruby main.rb」をターミナルから実行して下さい。
 
 def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
@@ -86,7 +88,7 @@ def q10
   p food.include?("うに") ? "好物です" : "まぁまぁ好きです"
 end
 end
-
+end
 
 def q11
   sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]]
@@ -94,8 +96,8 @@ def q11
   # 以下に回答を記載
   sports2 = sports.flatten.uniq
 
-  sports2.each.with_index(1) do |sports,i|
-  puts "No.#{i} #{sports}"
+sports2.each.with_index(1) do |sports,i|
+puts "No.#{i} #{sports}"
 end
 end
 
@@ -104,6 +106,7 @@ def q12
 
   # 以下に回答を記載
   p data[:user][:name]
+
 end
 
 def q13
@@ -112,7 +115,6 @@ def q13
 
   # 以下に回答を記載
 
-end
 
 def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
