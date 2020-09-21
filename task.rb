@@ -62,7 +62,7 @@ def q8
   programming_languages = %w(ruby php python javascript)
 
   # 以下に回答を記載
-  programming_languages.map{|p|p.capitalize!}
+  programming_languages.map(&:capitalize!)
   upper_case_programming_languages = programming_languages.map(&:upcase)
   # 以下は変更しないで下さい
   p programming_languages
@@ -110,7 +110,8 @@ def q13
   update_data = { age: 32, address: "沖縄" }
 
   # 以下に回答を記載
-  puts user_data.merge(update_data)
+  user_data.update(age: 32, address: "沖縄")
+  puts user_data
 end
 
 def q14
